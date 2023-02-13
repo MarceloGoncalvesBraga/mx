@@ -9,18 +9,10 @@ router.get('/postagem', function (req, res) {
     Postagem.findAll().then((result) => res.json(result));
 })
 router.post('/postagem', function (req, res) {
-    // Postagem.create({
-    //     title: req.body.title,
-    //     autor: req.body.autor,
-    //     texto: req.body.texto,
-    // decodeToken = jwt.decodeToken(req.headers['x-access-token'])
-    updatedAt = '22/01/2023'
-    // let { title, autor, texto} = req.body
     Postagem.create({
         title: req.body.title,
         autor: req.body.autor,
-        texto: req.body.texto,
-        updatedAt: updatedAt
+        texto: req.body.texto
       }).then((result) => res.json(result));})
 
 router.get('/postagem/:id', function (req, res) {
