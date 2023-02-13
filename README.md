@@ -4,7 +4,9 @@ acesse o arquivo config na pasta /data
 insira os dados de seu banco mysql
 abra o mysql
 sudo mysql
-insira os dados do arquivo de exemplo node.sql
+
+#### insira os dados do arquivo de exemplo node.sql
+
 ### 
 na pasta dos arquivos digite no cmd 
 npm install 
