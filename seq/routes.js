@@ -9,10 +9,11 @@ router.get('/postagem', function (req, res) {
     Postagem.findAll().then((result) => res.json(result));
 })
 router.post('/postagem', function (req, res) {
+
     Postagem.create({
         title: req.body.title,
         autor: req.body.autor,
-        texto: req.body.texto
+        texto: req.body.texto,
       }).then((result) => res.json(result));})
 
 router.get('/postagem/:id', function (req, res) {
