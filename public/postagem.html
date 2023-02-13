@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postagem</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="btn home-link">Voltar</a>
+      <section class="postagem"></section>
+      <section class="comentario"></section>
+     <h2>Deixe seu comentario</h2>
+     <form action="/save/comment" method="post">
+      <label for="fname">Nome:</label><br>
+  
+        <input type="text" id="nome" name="nome"><br>
+        <label for="lname">Email:</label><br>
+  
+        <input type="text" id="email" name="email"><br>
+  
+        <label for="lname">comentario:</label><br>
+  
+        <input type="text" id="comentario" name="comentario"><br>
+  
+        <input type="text" id="postagem" name="postagem" value="">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <script src="./postagem.js"></script>
+  </body>
+</html>
